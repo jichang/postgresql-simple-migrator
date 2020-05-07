@@ -4,7 +4,7 @@ cabal-version:       >=1.10
 -- http://haskell.org/cabal/users-guide/
 
 name:                postgresql-simple-migrator
-version:             0.1.0.0
+version:             0.1.1.0
 synopsis:            PostgreSQL Schema Migrations
 description:         A simple package for running database migrations PostgreSQL
 homepage:            https://github.com/JacobChang/postgresql-simple-migrator

@@ -99,7 +99,7 @@ down options = do
   let migrationDir = downMigrationDir options
   conn <- connectPostgreSQL (BS8.pack (downConnStr options))
   records <- getMigrationRecords conn
-  revertMigrations conn (take steps records) migrationDir
+  revertMigrations conn (take steps $ reverse records) migrationDir
   pure ""
   where
     steps =
